@@ -87,6 +87,9 @@
         .navbar {
             background-image: linear-gradient(to left, #87A1FF, #00E5FF);
         }
+        footer {
+            background-color: #29608C;
+        }
     </style>
 </head>
 <body>
@@ -112,15 +115,19 @@
                         <a class="nav-link" href="#article">Article</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
+                        <a class="nav-link" href="#projects">Projek</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#issue">Issue</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mendaftar">Daftar</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Pencarian" aria-label="Search">
                     <button class="btn btn-warning btn-outline-light" type="submit">Cari</button>
+                    
                 </form>
             </div>
         </div>
@@ -128,13 +135,62 @@
     <!-- END NAVBAR -->
 
     <!-- PEMBUKA -->
-    <div class="container" id="beranda">
+    <div class="container mt-2" id="beranda">
         <div class="row">
             <div class="col-md-8 g-1">
                 <p class="bg-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut quam at lorem interdum vehicula. Maecenas tellus ligula, dictum quis vulputate vel, eleifend vitae justo. Vivamus sit amet ipsum orci. Etiam sed diam ornare, faucibus felis id, iaculis libero. Nulla sit amet nulla leo. Donec magna eros, bibendum id nibh viverra, venenatis vehicula magna. Proin bibendum metus velit. Praesent rutrum ligula vel felis ornare ultricies. Sed viverra massa nec efficitur volutpat. Nunc nec urna ac augue porttitor rhoncus vitae facilisis justo. Sed vehicula metus luctus, pulvinar leo ut, sollicitudin turpis. Morbi venenatis maximus enim vel volutpat. Maecenas ultricies, magna non fringilla porttitor, ligula mi semper ligula, ut condimentum dolor ligula eu nisi. Integer lorem dolor, euismod ut rhoncus in, porta at nisl. Nam at euismod urna. Maecenas rutrum ac eros id gravida.
                     Aliquam erat volutpat. Donec ut dolor pharetra, convallis urna sit amet, ultricies libero. Aenean porttitor tortor a nibh fringilla, nec dignissim felis bibendum. Integer a pellentesque orci. Nulla in pretium nisi, suscipit sollicitudin nibh. Donec ac dolor quis nunc consectetur bibendum eget quis diam. Aliquam erat volutpat.
                 </p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                    Tombol side
+                </button>
+
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                         <div>
+                            <p>
+                                Proin tempus elementum ligula vitae egestas. Mauris sed finibus ante. Donec luctus venenatis ex id gravida. Aenean aliquet dui rutrum arcu scelerisque, a dignissim velit placerat. Nulla interdum elit id ullamcorper iaculis. Pellentesque viverra nisi et elit semper luctus. Morbi nisi dui, volutpat ac laoreet vitae, dictum nec dui. Etiam commodo sem at mollis ullamcorper. Donec eu venenatis urna, a pellentesque erat.
+                            </p>
+
+                            <ol class="list-group list-group-numbered">
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">
+                                            Subheading
+                                        </div>
+                                        Content for list item
+                                    </div>
+                                    <span class="badge text-bg-primary rounded-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">
+                                            Subheading
+                                        </div>
+                                        Content for list item
+                                    </div>
+                                    <span class="badge text-bg-primary rounded-pill">14</span>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                        <div class="fw-bold">
+                                            Subheading
+                                        </div>
+                                        Content for list item
+                                    </div>
+                                    <span class="badge text-bg-primary rounded-pill">14</span>
+                                </li>
+                            </ol>
+                            <br />
+
+                        </div>
+                    </div>
+                </div>
                 <div>
                     <canvas id="weatherChart"></canvas>
                 </div>
@@ -155,7 +211,7 @@
     <div class="container" id="article">
         <div class="row">
             <div class="col-md-5 g-1">
-                <h1>Article</h1>
+                <h1>Artikel</h1>
                 <p>
                     Cras imperdiet vestibulum eros, cursus rutrum risus fermentum eu. In in pulvinar quam, egestas suscipit ipsum. Etiam viverra consequat enim, et ullamcorper erat commodo nec. Vestibulum egestas scelerisque posuere. Vivamus nec malesuada mauris. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus tempus leo vel rhoncus dictum. Donec maximus, nulla sit amet venenatis lacinia, metus elit pretium augue, vitae placerat ligula augue vitae felis. Sed nec dolor ut tellus hendrerit blandit. Morbi efficitur euismod sapien in commodo. Sed feugiat sollicitudin orci.
                     Nunc rhoncus mi in turpis tristique gravida. Aliquam erat volutpat. Fusce eu mollis risus. Integer consequat ante ac hendrerit ullamcorper. Quisque id mauris ut orci fermentum consectetur nec sed tellus. Mauris rutrum at mi quis convallis. Nullam pulvinar aliquam lectus, sed efficitur diam rutrum quis. Nullam feugiat dapibus ullamcorper.
@@ -173,7 +229,7 @@
                 <br />
             </div>
             <div class="col-md-7 g-1" id="projects">
-                <h1>Projects</h1>
+                <h1>Projek</h1>
                 <br />
                 <table class="table table-striped">
                     <thead>
@@ -213,59 +269,6 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt, felis ut congue efficitur, felis enim convallis felis, id dapibus turpis lectus eu eros. Donec viverra enim nisi, non commodo turpis vestibulum nec. Maecenas placerat vulputate odio, non feugiat nulla pharetra a. Sed vulputate aliquam turpis, non pulvinar velit pretium non. Aliquam aliquet lacinia risus venenatis laoreet. Suspendisse sollicitudin, elit quis vulputate condimentum, libero quam feugiat sapien, a dictum lorem mauris sit amet felis. Phasellus ultrices congue sem in molestie. Nunc quis ante felis. Vestibulum in condimentum mi. Proin eu magna erat. Ut sed lorem eget tortor dapibus condimentum. Duis consequat elit in erat luctus, sed malesuada magna ornare.
                 </p>
                 <br />
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
-                    Toggle static offcanvas
-                </button>
-
-                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div>
-                            <p>
-                                Proin tempus elementum ligula vitae egestas. Mauris sed finibus ante. Donec luctus venenatis ex id gravida. Aenean aliquet dui rutrum arcu scelerisque, a dignissim velit placerat. Nulla interdum elit id ullamcorper iaculis. Pellentesque viverra nisi et elit semper luctus. Morbi nisi dui, volutpat ac laoreet vitae, dictum nec dui. Etiam commodo sem at mollis ullamcorper. Donec eu venenatis urna, a pellentesque erat.
-                            </p>
-
-                            <ol class="list-group list-group-numbered">
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">
-                                            Subheading
-                                        </div>
-                                        Content for list item
-                                    </div>
-                                    <span class="badge text-bg-primary rounded-pill">14</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">
-                                            Subheading
-                                        </div>
-                                        Content for list item
-                                    </div>
-                                    <span class="badge text-bg-primary rounded-pill">14</span>
-                                </li>
-                                <li class="list-group-item d-flex justify-content-between align-items-start">
-                                    <div class="ms-2 me-auto">
-                                        <div class="fw-bold">
-                                            Subheading
-                                        </div>
-                                        Content for list item
-                                    </div>
-                                    <span class="badge text-bg-primary rounded-pill">14</span>
-                                </li>
-                            </ol>
-                            <br />
-
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
@@ -345,10 +348,10 @@
     
     <hr />
     
-    <div class="container">
+    <div class="container" id="mendaftar">
         <div class="row">
             <div class="col-md-8">
-                <h1>Register</h1>
+                <h1>Mendaftar</h1>
                 <br />
                 <form>
                     <div class="input-group mb-3">
@@ -397,7 +400,35 @@
         </div>
     </div>
     
-    
+    <footer class="text-light pt-5 pb-4">
+        <div class="container text-center text-md-start">
+            <div class="row text-center text-md-start">
+                <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Kontak Kami</h5>
+                    <p><i class="fas fa-home me-3"></i> Jl. Sumber Amal, Medan</p>
+                    <p><i class="fas fa-envelope me-3"></i> valerieattilaalfath@gmail.com</p>
+                    <p><i class="fas fa-phone me-3"></i> +62 123 4567 8909</p>
+                </div>
+                <div class="col-md-4 col-lg-4 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Tautan Cepat</h5>
+                    <p><a href="#beranda" class="text-light text-decoration-none">Beranda</a></p>
+                    <p><a href="#article" class="text-light text-decoration-none">Artikel</a></p>
+                    <p><a href="#projects" class="text-light text-decoration-none">Projek</a></p>
+                    <p><a href="#issue" class="text-light text-decoration-none">Issue</a></p>
+                    <p><a href="#mendaftar" class="text-light text-decoration-none">Daftar</a></p>
+                    
+                </div>
+            </div>
+            
+            <hr class="my-3">
+            
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2024 Hak Cipta Terlindungi | Dibuat oleh <a href="#" class="text-light fw-bold">Valerie Attila A.</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
